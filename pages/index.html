@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arco Inteligente</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.25.3/sweetalert2.css">
+  </head>
+  <body>
+      <div class="container">
+        	<header id="header" class="">
+              <h1>Arco Inteligente</h1>
+          </header>
+
+          <div id="main-navigation">
+            <nav class="main-navlink">
+             <ul class="menu-ul">
+                  <li onclick="mostrarOpcionMenu(1)"><i class="fas fa-home"></i><a href="#introduction"> Introduccion</a><br></li>
+                  <li onclick="mostrarOpcionMenu(2)"><i class="fas fa-lightbulb"></i><a href="#project">  Proyecto</a><br></li>
+                  <li onclick="mostrarOpcionMenu(1)"><i class="fas fa-address-card"></i><a href="#form"> Formulario</a></li>
+                </ul>
+             </nav> 
+          </div>
+
+          <section id="section">
+              <article>
+
+                <section class="animated fadeInUpBig" id="section1">
+                  <div class="content">
+                    <h2 id="introduction" class="titles">Introduccion</h2><br>
+                    <p>Nuestro proyecto consiste en desarrollar un arco el cual ayude no solo al jugador a mejorar sus habilidades (Precisión y reacción cognitiva) sino también al coach a evaluar las mismas. El arco va a contar con un sistema de luces LED las cuales van a ir cambiando de color aleatoriamente, en el momento que el sistema emite un sonido, una luz queda encendida indicándole al jugador si tiene que patear(verde) o no(rojo) y hacia donde debe hacerlo. El sistema lo llevaremos a cabo a través de un panel de acrílico el cual tendrá todas las conexiones y evitará que el contacto directo de las luces con la pelota.
+                    </p><br>
+  
+                    <p><strong class="subtitles">Objetivo:</strong></p><br>
+                    <ol class="ol-align">
+                      <li>Medir velocidad de reacción del jugador</li>
+                      <li>Medir precisión del tiro</li>
+                      <li>Automatizar el entrenamiento</li>
+                    </ol> <br>
+                    <p> <strong>Hacer click en la imagen para mas informacion</strong> </p>
+                     <img src="../resources/images/img1.jpg" width="640" height="360" class="img-map" alt="Uruguay"
+                        usemap="#footbal">
+                        <map name="footbal">
+                          <area shape="rect" target="_blank" coords="0,0,340,360" href="https://es.fifa.com/worldcup/" alt="Sun">
+                          <area shape="rect" target="_blank" coords="380,0,712,213" href="http://www.auf.org.uy/Portal/HOME/" alt="Mercury">
+                          <area shape="rect" target="_blank" coords="382,214,712,405" href="http://www.goal.com/es-ar/noticias/mundial-rusia-2018-alineacion-figura-plantilla-y-todo-lo-que-hay-/n7vdrt31t0a1vunkvfqe3827" alt="Venus">
+                        </map>
+                </section>
+
+                <section class="animated fadeInUpBig" id="section2">
+                  <h2 id="project" class="titles">Proyecto</h2><br>
+                    <p> <strong class="subtitles">Materiales:</strong></p><br>
+                      <p>
+                        <ol class="ol-align">
+                        <li>Arco: tubos PVC, red de arco, codos de PVC</li>
+                        <li>Arduino UNO</li>
+                        <li>Cables jumper (macho y hembra)</li>
+                        <li>Sensores: PIR (Sensor de movimiento)</li>
+                        <li>Luces LED</li>
+                      </ol> <br>
+                    </p><br>
+                    <p>Este proyecto se llevo a cabo en el periodo de 2 meses apróximadamente. Primeramente definimos los matriales necesarios para llevar a cabo el MVP, luego comenzamos el desarrollo investigando como funciona cada material del producto y por último llevamos a cabo la implementación de este. Logrando así el resultado mostrado en el video.</p><br>
+
+                  <iframe width="640" height="360" src="https://www.youtube.com/embed/7NjHWrpMaDE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                  <p class="subtitles">Integrantes y dedicación:</p>
+                  <div class="table">
+                    <table style="width:100%">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Mail</th>
+                      <th>Horas</th>
+                    </tr>
+                    <tr>
+                      <td>Felipe Najson</td>
+                      <td>felipe.najson@hotmail.com</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>Marco Fiorito</td>
+                      <td>marcofiorito1@gmail.com</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Total General</td>
+                      <td>55</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                  </table>
+                  </div>
+                  <div class="images">
+                    <img src="../resources/images/img2.png" width="450" height="260"  class="img2">
+                    <img src="../resources/images/img3.jpg" width="200" height="180"  class="img3">
+                  </div>
+               </section>
+
+                <section class="animated fadeInUpBig" id="section3">
+                    <div class="form-container">
+                        <h2 id="" class="titles">Formulario</h2>
+                        <form method="get" id="form" onsubmit="" accept-charset="utf-8">
+                          
+                          <fieldset>
+                            <label>Nombre y apellido<input type="text/submit/hidden/button/etc" name="name" maxlength="20" required="true" placeholder="Nombre y apellido" id="nombre"></label><br><br>
+                            <label>Género
+                              <input type="radio" name="Sex" value="Masculino" checked>Hombre
+                              <input type="radio" name="Sex" value="Femenino">Mujer
+                            </label><br><br>
+                            <label>Correo<input type="email" placeholder="Email" required="true" name="" value=""></label><br><br>
+                            <label>Comentarios<textarea name="largeText" cols="50" rows="5" placeholder="Ingrese los comentarios" id="comments"></textarea></label><br>
+
+                          <fieldset>
+                              <legend><input type="checkbox" onchange="mostrarOcultarContenido(event)" name="amplyOrNot">¿Desea amplicar información sonbre el proyecto?</legend>
+                              <div id="contenido">
+                                
+                                <label>Elija horario preferido de reunión 
+                                  <select>
+                                    <option value="macho">Matutino</option>
+                                    <option value="">Mediodía</option>
+                                    <option value="">`Tarde</option>
+                                    <option value="n">Nocturno</option>
+                                  </select>
+                                  </label><br><br>
+                                <label>Semana para contactar<input type="date" placeholder="Ingrese fecha: "></label>
+                                
+                              </div>
+
+                            </fieldset>
+                            <div class="button">
+                                <input type="submit" name="ENVIAR" value="Send" class="send">
+                                <input type="reset" name="RESET" value="Reset" class="reset"></button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                </section>
+              </article>
+          </section>
+        <footer>
+          <div class="footer">
+              <p>Siguenos en nuestras redes:</p>
+              <a href="#"><i class="fab fa-facebook icon"></i></a>
+              <a href="#"><i class="fab fa-twitter icon"></i></a>
+              <a href="#"><i class="fab fa-instagram icon"></i></a>
+          </div>
+          <div class="footer">
+            <p>Obligatorio 2018 - Universidad ORT Uruguay</p>
+          </div>
+        </footer>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.25.3/sweetalert2.js" type="text/javascript" ></script>
+  <script src="../scripts/script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
